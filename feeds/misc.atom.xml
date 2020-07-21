@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>kura.gg - misc</title><link href="https://kura.gg/" rel="alternate"></link><link href="https://kura.gg/feeds/misc.atom.xml" rel="self"></link><id>https://kura.gg/</id><updated>2015-12-30T22:34:00+00:00</updated><entry><title>Farewell Ian</title><link href="https://kura.gg/2015/12/30/farewell-ian/" rel="alternate"></link><published>2015-12-30T22:34:00+00:00</published><updated>2015-12-30T22:34:00+00:00</updated><author><name>kura</name></author><id>tag:kura.gg,2015-12-30:/2015/12/30/farewell-ian/</id><content type="html">&lt;div class="figure"&gt;
+&lt;img alt="Ian Murdock" src="/images/ian-murdock.png"/&gt;
+&lt;p class="caption"&gt;Image by Stephen Shankland&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Today news arrived that broke my heart, Ian Murdock has passed away. I never
+met Ian but he had an enormous impact on my life, through his work.&lt;/p&gt;
+&lt;p&gt;Debian has been my operating system of choice for many years now, it runs on
+all of my servers and my home computers. Ian’s vision for the operating system
+is why I started using it and use it to this day. It’s why I’ve continued to
+work on the operating system and create packages of all of my work for it.&lt;/p&gt;
+&lt;p&gt;Ian is, without a doubt, one of the biggest influences on my career and on my life.&lt;/p&gt;
+&lt;p&gt;Farewell sir, you will be missed.&lt;/p&gt;
+</content><category term="misc"></category><category term="Ian Murdock"></category><category term="Debian"></category></entry><entry><title>Running a Tor exit node is not as scary as it sounds</title><link href="https://kura.gg/2015/02/02/running-a-tor-exit-node-is-not-as-scary-as-it-sounds/" rel="alternate"></link><published>2015-02-02T09:59:00+00:00</published><updated>2015-02-02T09:59:00+00:00</updated><author><name>kura</name></author><id>tag:kura.gg,2015-02-02:/2015/02/02/running-a-tor-exit-node-is-not-as-scary-as-it-sounds/</id><summary type="html">
+&lt;p&gt;There is a variety of information out there about being a Tor exit node
+operator. Articles like &lt;a class="reference external" href="https://testbit.eu/tor-exit-node-less-week/"&gt;this one&lt;/a&gt;
+make the thought of running a Tor exit as scary prospect, it’s understandable,
+some countries have laws that make running an exit scary too.&lt;/p&gt;
+&lt;p&gt;I run &lt;a class="reference external" href="/tor/"&gt;a variety of relays&lt;/a&gt; in various countries in this crazy World
+and thought I’d share my experiences.&lt;/p&gt;
+&lt;div class="section" id="choosing-a-hosting-partner"&gt;
+&lt;h2&gt;&lt;a class="headerlink" href="#choosing-a-hosting-partner" title="Permalink to this headline"&gt;※&lt;/a&gt;Choosing a hosting partner&lt;/h2&gt;
+&lt;p&gt;I personally choose to use a third party hosting provider for my relays,
+rather than using colocation. I just find this is easier and I don’t have to
+think about the hardware much at all.&lt;/p&gt;
+&lt;p&gt;Finding a provider can be a pain, there is a decent list on the &lt;a class="reference external" href="https://trac.torproject.org/projects/tor/wiki/doc/GoodBadISPs"&gt;Tor wiki&lt;/a&gt;. I use
+some of the providers on this list but I’ve also found it can be a really
+good idea to just contact a provider and talk to them …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">
+&lt;p&gt;There is a variety of information out there about being a Tor exit node
+operator. Articles like &lt;a class="reference external" href="https://testbit.eu/tor-exit-node-less-week/"&gt;this one&lt;/a&gt;
+make the thought of running a Tor exit as scary prospect, it’s understandable,
+some countries have laws that make running an exit scary too.&lt;/p&gt;
+&lt;p&gt;I run &lt;a class="reference external" href="/tor/"&gt;a variety of relays&lt;/a&gt; in various countries in this crazy World
+and thought I’d share my experiences.&lt;/p&gt;
+&lt;div class="section" id="choosing-a-hosting-partner"&gt;
+&lt;h2&gt;&lt;a class="headerlink" href="#choosing-a-hosting-partner" title="Permalink to this headline"&gt;※&lt;/a&gt;Choosing a hosting partner&lt;/h2&gt;
+&lt;p&gt;I personally choose to use a third party hosting provider for my relays,
+rather than using colocation. I just find this is easier and I don’t have to
+think about the hardware much at all.&lt;/p&gt;
+&lt;p&gt;Finding a provider can be a pain, there is a decent list on the &lt;a class="reference external" href="https://trac.torproject.org/projects/tor/wiki/doc/GoodBadISPs"&gt;Tor wiki&lt;/a&gt;. I use
+some of the providers on this list but I’ve also found it can be a really
+good idea to just contact a provider and talk to them. There is a company I
+spoke to recently that is quite small and were really happy about the idea of
+having an exit operator using them. When we have figured things out, I’ll
+add them to the wiki.&lt;/p&gt;
+&lt;p&gt;You’ll really want to find a provider with 1Gbps link and lots of bandwidth, I
+like to find or pay for unmetered 1Gbps connectivity, but &lt;span class="caps"&gt;10TB&lt;/span&gt;/month should be
+a good amount.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="a-good-exit-policy"&gt;
+&lt;h2&gt;&lt;a class="headerlink" href="#a-good-exit-policy" title="Permalink to this headline"&gt;※&lt;/a&gt;A good exit policy&lt;/h2&gt;
+&lt;p&gt;The exit policy is everything, it can mean the difference between lots of abuse
+complaints or very few. There is a &lt;a class="reference external" href="https://trac.torproject.org/projects/tor/wiki/doc/ReducedExitPolicy"&gt;good reduced exit policy on the Tor Wiki&lt;/a&gt;, I use
+this on all of my nodes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="abuse-complaints"&gt;
+&lt;h2&gt;&lt;a class="headerlink" href="#abuse-complaints" title="Permalink to this headline"&gt;※&lt;/a&gt;Abuse complaints&lt;/h2&gt;
+&lt;p&gt;With the reduced exit policy from the Tor wiki, I find abuse complaints are
+actually very rare.&lt;/p&gt;
+&lt;p&gt;The complaints I get are usually automatic emails from some hosting companies
+that have &lt;span class="caps"&gt;HTTP&lt;/span&gt; brute force attempts logged. Not many companies use these
+things but there are a few. There’s not much you can do, they are automated
+and you should reply to them like you should reply to all abuse complaints but,
+the response will never be read.&lt;/p&gt;
+&lt;p&gt;The majority of complaints I get are related to &lt;a class="reference external" href="http://stopforumspam.com/"&gt;stopforumspam.com&lt;/a&gt;. Again, there’s not really anything you can do
+about this except reply.&lt;/p&gt;
+&lt;p&gt;Generally though, I will receive maybe one complaint per month on each node,
+sometimes two, but that’s about it and it’s always one of the two abuse reports
+I mentioned above.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="use-the-exit-notice"&gt;
+&lt;h2&gt;&lt;a class="headerlink" href="#use-the-exit-notice" title="Permalink to this headline"&gt;※&lt;/a&gt;Use the exit notice&lt;/h2&gt;
+&lt;p&gt;I can’t really give any evidence as to whether or not this helps but, use the
+&lt;a class="reference external" href="https://svn.torproject.org/svn/tor/branches/hidserv-perf/contrib/tor-exit-notice.html"&gt;Tor exit notice&lt;/a&gt;
+on port 80. This means any admins that look up your &lt;span class="caps"&gt;IP&lt;/span&gt; may browse to it and see
+it’s a Tor exit node and also has your email address in case they want to get
+in touch about blocking their servers from your node.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="incorporate"&gt;
+&lt;h2&gt;&lt;a class="headerlink" href="#incorporate" title="Permalink to this headline"&gt;※&lt;/a&gt;Incorporate&lt;/h2&gt;
+&lt;p&gt;I haven’t had any reason to result to this myself but, I started my own
+company (easy to do in the &lt;span class="caps"&gt;UK&lt;/span&gt;) and my servers are paid for through this company.&lt;/p&gt;
+&lt;p&gt;It’s really not much hassle to set-up a company and a company bank account.&lt;/p&gt;
+&lt;p&gt;Any of the donations I receive that aren’t Bitcoin are paid in to this company
+too to continue paying for my nodes and put new ones online.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="misc"></category><category term="tor"></category></entry><entry><title>Hauntr - A theme for Pelican</title><link href="https://kura.gg/2014/06/09/hauntr/" rel="alternate"></link><published>2014-06-09T18:00:00+01:00</published><updated>2014-06-09T18:00:00+01:00</updated><author><name>kura</name></author><id>tag:kura.gg,2014-06-09:/2014/06/09/hauntr/</id><content type="html">&lt;div class="figure align-center"&gt;
+&lt;img alt="Haunter, the evolved Pokémon form of Gastly" src="/images/haunter.png"/&gt;
+&lt;p class="caption"&gt;(Image by &lt;a class="reference external" href="http://kawiku.deviantart.com/art/Haunter-350580512"&gt;Kawiku&lt;/a&gt;)&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="section" id="introduction"&gt;
+&lt;h2&gt;&lt;a class="headerlink" href="#introduction" title="Permalink to this headline"&gt;※&lt;/a&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Hauntr is a minimal, lightweight and clean theme for the
+&lt;a class="reference external" href="http://getpelican.com"&gt;Pelican&lt;/a&gt; blogging platform.&lt;/p&gt;
+&lt;p&gt;It is named after the Pokémon ‘Haunter’ because it is a modified version
+(you might say evolved) of my previous theme, &lt;a class="reference external" href="/ghastly/"&gt;Ghastly&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="features"&gt;
+&lt;h2&gt;&lt;a class="headerlink" href="#features" title="Permalink to this headline"&gt;※&lt;/a&gt;Features&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Disqus&lt;/li&gt;
+&lt;li&gt;Pygments&lt;/li&gt;
+&lt;li&gt;&lt;span class="caps"&gt;CSS&lt;/span&gt; minifying using webassets&lt;/li&gt;
+&lt;li&gt;Share buttons&lt;/li&gt;
+&lt;li&gt;Custom 404 page&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</content><category term="misc"></category><category term="pelican"></category></entry><entry><title>pypip.in most requested shields</title><link href="https://kura.gg/2014/03/03/pypip.in-most-requested-shields/" rel="alternate"></link><published>2014-03-03T21:40:00+00:00</published><updated>2014-03-03T21:40:00+00:00</updated><author><name>kura</name></author><id>tag:kura.gg,2014-03-03:/2014/03/03/pypip.in-most-requested-shields/</id><summary type="html">
+&lt;div class="section" id="pypip-in"&gt;
+&lt;h2&gt;&lt;a class="headerlink" href="#pypip-in" title="Permalink to this headline"&gt;※&lt;/a&gt;pypip.in&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://pypip.in/"&gt;pypip.in&lt;/a&gt; is a website &lt;a class="reference external" href="/2013/12/24/shields-for-pypi-packages/"&gt;I have written about before&lt;/a&gt;. I decided I would
+look at the shields and see which ones were the most requested so far this year.&lt;/p&gt;
+&lt;p&gt;Due to the volumn of requests, I only keep 90 days
+of logs from nginx and no logs from Varnish, pypipin or the local version of
+buckler. nginx sits in front of Varnish so, even if Varnish responds with a
+cached version of the shield, a log line is still written to say it was requested.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="top-20"&gt;
+&lt;h2&gt;&lt;a class="headerlink" href="#top-20" title="Permalink to this headline"&gt;※&lt;/a&gt;Top 20&lt;/h2&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://docs.python-requests.org/en/latest/index.html"&gt;requests&lt;/a&gt; [downloads]&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://pillow.readthedocs.org/en/latest/"&gt;Pillow&lt;/a&gt; [version]&lt;/li&gt;
+&lt;li&gt;Pillow [downloads]&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://deeplearning.net/software/theano/"&gt;Theano&lt;/a&gt; [version]&lt;/li&gt;
+&lt;li&gt;Theano [downloads]&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://github.com/joke2k/faker"&gt;fake-factory&lt;/a&gt; [downloads]&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://livestreamer.tanuki.se/en/latest/install.html"&gt;livestreamer&lt;/a&gt; [downloads]&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.django-cms.org/en/"&gt;django-cms&lt;/a&gt; [downloads]&lt;/li&gt;
+&lt;li&gt;django-cms [version]&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/sivel/speedtest-cli"&gt;speedtest-cli&lt;/a&gt; [version]&lt;/li&gt;
+&lt;li&gt;speedtest-cli [downloads]&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://boto.readthedocs.org/en/latest/"&gt;boto&lt;/a&gt; [downloads]&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/globocom/thumbor"&gt;thumbor&lt;/a&gt; [downloads]&lt;/li&gt;
+&lt;li&gt;thumbor [version]&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.pip-installer.org/en/latest/"&gt;pip&lt;/a&gt; [version]&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://pythonhosted.org/tweepy/html/"&gt;tweepy&lt;/a&gt; [version]&lt;/li&gt;
+&lt;li&gt;tweepy [downloads]&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://django-allauth.readthedocs.org/en/latest/"&gt;django-allauth&lt;/a&gt; [downloads]&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://pymssql.org/"&gt;pymssql&lt;/a&gt; [downloads]&lt;/li&gt;
+&lt;li&gt;pymssql [version]&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The first thing that struck me is that I actually hadn’t heard of or used
+quite a lot of …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">
+&lt;div class="section" id="pypip-in"&gt;
+&lt;h2&gt;&lt;a class="headerlink" href="#pypip-in" title="Permalink to this headline"&gt;※&lt;/a&gt;pypip.in&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://pypip.in/"&gt;pypip.in&lt;/a&gt; is a website &lt;a class="reference external" href="/2013/12/24/shields-for-pypi-packages/"&gt;I have written about before&lt;/a&gt;. I decided I would
+look at the shields and see which ones were the most requested so far this year.&lt;/p&gt;
+&lt;p&gt;Due to the volumn of requests, I only keep 90 days
+of logs from nginx and no logs from Varnish, pypipin or the local version of
+buckler. nginx sits in front of Varnish so, even if Varnish responds with a
+cached version of the shield, a log line is still written to say it was requested.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="top-20"&gt;
+&lt;h2&gt;&lt;a class="headerlink" href="#top-20" title="Permalink to this headline"&gt;※&lt;/a&gt;Top 20&lt;/h2&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://docs.python-requests.org/en/latest/index.html"&gt;requests&lt;/a&gt; [downloads]&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://pillow.readthedocs.org/en/latest/"&gt;Pillow&lt;/a&gt; [version]&lt;/li&gt;
+&lt;li&gt;Pillow [downloads]&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://deeplearning.net/software/theano/"&gt;Theano&lt;/a&gt; [version]&lt;/li&gt;
+&lt;li&gt;Theano [downloads]&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://github.com/joke2k/faker"&gt;fake-factory&lt;/a&gt; [downloads]&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://livestreamer.tanuki.se/en/latest/install.html"&gt;livestreamer&lt;/a&gt; [downloads]&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.django-cms.org/en/"&gt;django-cms&lt;/a&gt; [downloads]&lt;/li&gt;
+&lt;li&gt;django-cms [version]&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/sivel/speedtest-cli"&gt;speedtest-cli&lt;/a&gt; [version]&lt;/li&gt;
+&lt;li&gt;speedtest-cli [downloads]&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://boto.readthedocs.org/en/latest/"&gt;boto&lt;/a&gt; [downloads]&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/globocom/thumbor"&gt;thumbor&lt;/a&gt; [downloads]&lt;/li&gt;
+&lt;li&gt;thumbor [version]&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.pip-installer.org/en/latest/"&gt;pip&lt;/a&gt; [version]&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://pythonhosted.org/tweepy/html/"&gt;tweepy&lt;/a&gt; [version]&lt;/li&gt;
+&lt;li&gt;tweepy [downloads]&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://django-allauth.readthedocs.org/en/latest/"&gt;django-allauth&lt;/a&gt; [downloads]&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://pymssql.org/"&gt;pymssql&lt;/a&gt; [downloads]&lt;/li&gt;
+&lt;li&gt;pymssql [version]&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The first thing that struck me is that I actually hadn’t heard of or used
+quite a lot of those packages from the list.&lt;/p&gt;
+&lt;p&gt;The second thing that struck me is the popularity of the pymssql package, but
+that popularity in this instance is only based on the number of requests for
+the shields and cannot be used to verify the usage popularity of the package itself.&lt;/p&gt;
+&lt;p&gt;Anyway, pretty much useless information, but I was bored.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="misc"></category><category term="python"></category><category term="pypi"></category><category term="pip"></category></entry><entry><title>Bye bye Google Analytics, hello self-hosted Open Web Analytics &amp; DuckDuckGo search</title><link href="https://kura.gg/2013/09/17/bye-bye-google-analytics-hello-self-hosted-open-web-analytics-duckduckgo-search/" rel="alternate"></link><published>2013-09-17T18:00:00+01:00</published><updated>2013-09-17T18:00:00+01:00</updated><author><name>kura</name></author><id>tag:kura.gg,2013-09-17:/2013/09/17/bye-bye-google-analytics-hello-self-hosted-open-web-analytics-duckduckgo-search/</id><summary type="html">
+&lt;p&gt;Today I can happily announce that &lt;a class="reference external" href="https://github.com/kura/kura.io/commit/5e82c14bab3922d81b430549dd258a2047d1367f"&gt;the Google Analytics tracking code has been
+removed from this website&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="section" id="goodybye-google-analytics-hello-open-web-analytics"&gt;
+&lt;h2&gt;&lt;a class="headerlink" href="#goodybye-google-analytics-hello-open-web-analytics" title="Permalink to this headline"&gt;※&lt;/a&gt;Goodybye Google Analytics &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; hello Open Web Analytics&lt;/h2&gt;
+&lt;p&gt;I’ve been planning on doing it from a while because I do not like Google Analytics,
+I don’t like being tracked and I actively stopped trying to use Google services
+for my own reasons.&lt;/p&gt;
+&lt;p&gt;The company I work for uses &lt;a class="reference external" href="http://piwik.org/"&gt;Piwik&lt;/a&gt;
+for some of our clients, I am not a fan
+of Piwik or how it works and does things. I did some research and found some
+service providers but their free options were limited or I felt they weren’t a
+good fit, eventually I stumbled upon &lt;a class="reference external" href="http://www.openwebanalytics.com"&gt;Open Web Analytics&lt;/a&gt; and decided that it
+not only suited my purposes, but it meant servers I control would hold the
+analytical data, rather than some third party.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="hello-duckduckgo"&gt;
+&lt;h2&gt;&lt;a class="headerlink" href="#hello-duckduckgo" title="Permalink to this headline"&gt;※&lt;/a&gt;Hello DuckDuckGo&lt;/h2&gt;
+&lt;p&gt;After launching the new version of …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">
+&lt;p&gt;Today I can happily announce that &lt;a class="reference external" href="https://github.com/kura/kura.io/commit/5e82c14bab3922d81b430549dd258a2047d1367f"&gt;the Google Analytics tracking code has been
+removed from this website&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="section" id="goodybye-google-analytics-hello-open-web-analytics"&gt;
+&lt;h2&gt;&lt;a class="headerlink" href="#goodybye-google-analytics-hello-open-web-analytics" title="Permalink to this headline"&gt;※&lt;/a&gt;Goodybye Google Analytics &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; hello Open Web Analytics&lt;/h2&gt;
+&lt;p&gt;I’ve been planning on doing it from a while because I do not like Google Analytics,
+I don’t like being tracked and I actively stopped trying to use Google services
+for my own reasons.&lt;/p&gt;
+&lt;p&gt;The company I work for uses &lt;a class="reference external" href="http://piwik.org/"&gt;Piwik&lt;/a&gt;
+for some of our clients, I am not a fan
+of Piwik or how it works and does things. I did some research and found some
+service providers but their free options were limited or I felt they weren’t a
+good fit, eventually I stumbled upon &lt;a class="reference external" href="http://www.openwebanalytics.com"&gt;Open Web Analytics&lt;/a&gt; and decided that it
+not only suited my purposes, but it meant servers I control would hold the
+analytical data, rather than some third party.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="hello-duckduckgo"&gt;
+&lt;h2&gt;&lt;a class="headerlink" href="#hello-duckduckgo" title="Permalink to this headline"&gt;※&lt;/a&gt;Hello DuckDuckGo&lt;/h2&gt;
+&lt;p&gt;After launching the new version of my site, I got upset at the fact I had lost
+my search functionality. Sadly &lt;a class="reference external" href="http://docs.getpelican.com/"&gt;Pelican&lt;/a&gt;
+does not have any working search
+functionality and I undertook the task of building &lt;a class="reference external" href="http://sphinx-doc.org/"&gt;Sphinx&lt;/a&gt;
+-style searches
+in to Pelican, making it entirely static.&lt;/p&gt;
+&lt;p&gt;The task of building this functionality is still under way, but I decided that
+I would like a more immediate option.&lt;/p&gt;
+&lt;p&gt;I’ve been using DuckDuckGo as my primary and only search provider for quite a
+long time now and learned that you can embed it on your site easily, just like
+with Google site searches.&lt;/p&gt;
+&lt;p&gt;So there it is, embded happily and with adverts enabled on their end to make
+sure they make some revenue from it.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="misc"></category><category term="google analytics"></category><category term="duckduckgo"></category><category term="open web analytics"></category><category term="owa"></category></entry><entry><title>Visualised: 24 hours of SSH attacks against a single server</title><link href="https://kura.gg/2012/03/02/visualised-24-hours-of-ssh-attacks-against-a-single-server/" rel="alternate"></link><published>2012-03-02T18:36:00+00:00</published><updated>2012-03-02T18:36:00+00:00</updated><author><name>kura</name></author><id>tag:kura.gg,2012-03-02:/2012/03/02/visualised-24-hours-of-ssh-attacks-against-a-single-server/</id><content type="html">&lt;p&gt;24 hours of &lt;span class="caps"&gt;SSH&lt;/span&gt; attacks against a single server, visualised on a world
+map using Python.&lt;/p&gt;
+&lt;p&gt;When a country stays lit up for more than 1 tick of the clock in the
+left hand corner it means that multiple attacks are happening from
+different &lt;span class="caps"&gt;IP&lt;/span&gt; addresses. An attacker is banned after;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;1 failed root login,&lt;/li&gt;
+&lt;li&gt;3 failed user logins (including invalid users) and&lt;/li&gt;
+&lt;li&gt;3 failed system logins.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div align="center" class="vimeo"&gt;&lt;iframe frameborder="0" height="500" src="https://player.vimeo.com/video/37818131" width="800"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;div class="section" id="direct-links"&gt;
+&lt;h2&gt;&lt;a class="headerlink" href="#direct-links" title="Permalink to this headline"&gt;※&lt;/a&gt;Direct links&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://vimeo.com/37818131"&gt;Vimeo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.youtube.com/watch?v=S_p0G2oLuDU"&gt;YouTube&lt;/a&gt; - older version of the video with yellow colouring instead of red.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</content><category term="misc"></category><category term="bruteforce"></category><category term="ssh"></category></entry><entry><title>code_swarm - Apache, Python and PostgreSQL commit visualization</title><link href="https://kura.gg/2010/02/13/code_swarm-apache-python-and-postgresql-commit-visualization/" rel="alternate"></link><published>2010-02-13T23:01:00+00:00</published><updated>2010-02-13T23:01:00+00:00</updated><author><name>kura</name></author><id>tag:kura.gg,2010-02-13:/2010/02/13/code_swarm-apache-python-and-postgresql-commit-visualization/</id><content type="html">
+&lt;p&gt;These videos are pretty old now and I had forgotten about them until a
+colleague tweeted about a Twitter code_swarm visualization which made
+me remember.&lt;/p&gt;
+&lt;p&gt;So here they are, best viewed in full screen mode.&lt;/p&gt;
+&lt;div class="section" id="apache"&gt;
+&lt;h2&gt;&lt;a class="headerlink" href="#apache" title="Permalink to this headline"&gt;※&lt;/a&gt;Apache&lt;/h2&gt;
+&lt;div align="center" class="vimeo"&gt;&lt;iframe frameborder="0" height="500" src="https://player.vimeo.com/video/1076588" width="800"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="section" id="python"&gt;
+&lt;h2&gt;&lt;a class="headerlink" href="#python" title="Permalink to this headline"&gt;※&lt;/a&gt;Python&lt;/h2&gt;
+&lt;div align="center" class="vimeo"&gt;&lt;iframe frameborder="0" height="500" src="https://player.vimeo.com/video/1093745" width="800"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="section" id="postgresql"&gt;
+&lt;h2&gt;&lt;a class="headerlink" href="#postgresql" title="Permalink to this headline"&gt;※&lt;/a&gt;PostgreSQL&lt;/h2&gt;
+&lt;div align="center" class="vimeo"&gt;&lt;iframe frameborder="0" height="500" src="https://player.vimeo.com/video/1081680" width="800"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/div&gt;
+</content><category term="misc"></category><category term="apache"></category><category term="code_swarm"></category><category term="postgresql"></category><category term="python"></category></entry></feed>
